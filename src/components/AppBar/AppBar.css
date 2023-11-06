@@ -1,0 +1,31 @@
+@import "../../utils/vars.css";
+
+.link-list {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.list-link {
+  color: var(--mait-text-clr);
+}
+
+.list-item{
+  transition: transform var(--tr-delay) var(--tr-timing-func);
+}
+
+.list-item:hover,.list-item:focus,.list-item:active {
+  transform: scale(0.9);
+}
+
+@media screen and (min-width: 768px) {
+  .link-list {
+    display: flex;
+    justify-content: center;
+  }
+  .list-item {
+    margin-right: 15px;
+  }
+  .list-item:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,7 @@
+:root {
+    --mait-text-clr: azure;
+    --bacground-clr: #5b656f;
+    --tr-timing-func: cubic-bezier(0, 0.11, 0.35, 2);
+    --tr-delay: 150ms;
+    --transition: scale(0.9);
+}
