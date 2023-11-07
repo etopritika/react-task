@@ -12,7 +12,7 @@
 .back-btn {
   margin-top: 15px;
   transition: transform var(--tr-delay) var(--tr-timing-func);
-  background-color: black;
+  background-color: #363535;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
