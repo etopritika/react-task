@@ -1,6 +1,6 @@
-import { lazy } from "react";
+import { lazy, ReactElement } from "react";
 
-function LazyComponent(id: string) {
+function LazyComponent(id: string): ReactElement {
   const DynamicComponent = lazy(() => import(`../components/tabs/${id}`));
   return <DynamicComponent />;
 }

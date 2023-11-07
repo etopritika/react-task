@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ tabs }) => {
     <>
       <AppBar tabs={tabs} />
       <main className="container">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div className="loading">Loading...</div>}>
           <Outlet />
         </Suspense>
       </main>

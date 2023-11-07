@@ -1,4 +1,4 @@
-function doesComponentExist(id: string) {
+function doesComponentExist(id: string): boolean {
   try {
     require(`../components/tabs/${id}`);
     return true;

@@ -6,7 +6,7 @@ async function fetchTabs(): Promise<Tabs[]> {
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error("Помилка завантаження JSON: ", error);
+    console.error("Error loading JSON: ", error);
     return [];
   }
 }
