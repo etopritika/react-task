@@ -1,4 +1,28 @@
+@import "../../utils//vars.css";
+
 .not-found-container {
-    text-align: center;
-    height: 100vh;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.back-btn {
+  margin-top: 15px;
+  transition: transform var(--tr-delay) var(--tr-timing-func);
+  background-color: black;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.back-btn a {
+  color: var(--mait-text-clr);
+}
+
+.back-btn:hover,
+.back-btn:focus,
+.back-btn:active {
+  transform: var(--transition);
 }

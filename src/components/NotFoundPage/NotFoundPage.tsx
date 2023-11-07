@@ -5,7 +5,7 @@ const NotFoundPage = () => {
   return (
     <main className="container not-found-container">
       <p>Page not found</p>
-      <button type="button">
+      <button className="back-btn" type="button">
         <Link to="/">Back to Home</Link>
       </button>
     </main>
