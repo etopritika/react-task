@@ -9,6 +9,7 @@ import NotFoundPage from "../NotFoundPage";
 
 function App() {
   const [tabs, setTabs] = useState<Tabs[]>([]);
+
   useEffect(() => {
     async function loadTabs() {
       const data = await fetchTabs();
@@ -17,6 +18,8 @@ function App() {
     loadTabs();
   }, []);
 
+  console.log(tabs);
+  console.log("render");
   const defaultTab = tabs.find((tab) => tab.order === 0);
 
   return (
