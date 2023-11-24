@@ -17,9 +17,7 @@ function App() {
     }
     loadTabs();
   }, []);
-
-  console.log(tabs);
-  console.log("render");
+  
   const defaultTab = tabs.find((tab) => tab.order === 0);
 
   return (
